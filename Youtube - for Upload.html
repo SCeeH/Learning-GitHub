@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<!-- Selecting the language also helps with SEO-->
+<html lang="en">
+  <head>
+    <!-- Basic information about the page, better for SEO -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Youtube, youtube" />
+    <!-- The title of the page appears on the tab at the top -->
+    <title>Youtube Clone</title>
+
+    <!-- Linking to CSS files for cleaner and more organised code -->
+    <link rel="stylesheet" href="CSS for YT/Youtube-General.css" />
+    <link rel="stylesheet" href="CSS for YT/Youtube-Header.css" />
+    <link rel="stylesheet" href="CSS for YT/Youtube-Sidebar.css" />
+    <link rel="stylesheet" href="CSS for YT/Youtube-Video.css" />
+
+    <!-- Font import (pasted in from google)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style></style>
+  </head>
+  <body>
+    <!-- Div, Header, Nav, Main and Section are all container elements
+    Div has no meaning to computers, whilst, the rest do
+    Header - The header of the page (only 1 usually)
+    Nav - For navigation (only 1 usually)
+    Main - The main content on the page (only 1)
+    Section - A section of the main content on the page (can be multiple) -->
+    <!-- A class gives a name to a element that can be selected in CSS -->
+    <header class="header">
+      <!-- Div's make editing and slecting elements easier as they are just container elements -->
+      <div class="left-section">
+        <img
+          class="hamburger-menu"
+          src="Images for YT/Menu Logos for YT/3 Line Menu.svg"
+        />
+        <img
+          class="youtube-logo"
+          src="Images for YT/Menu Logos for YT/Youtube logo.svg"
+        />
+      </div>
+      <div class="middle-section">
+        <!-- An input element is an element where you can type stuff into, like a search bar -->
+        <input class="search-bar" type="text" placeholder="Search" />
+        <button class="search-button">
+          <img
+            class="search-icon"
+            src="Images for YT/Menu Logos for YT/Search Logo.svg"
+          />
+          <div class="tooltip">Search</div>
+        </button>
+        <button class="voice-search-button">
+          <img
+            class="voice-search-icon"
+            src="Images for YT/Menu Logos for YT/Microphone Logo.svg"
+          />
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload-icon-container">
+          <img
+            class="video-upload-icon"
+            src="Images for YT/Menu Logos for YT/Video Upload menu.svg"
+          />
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="youtube-menu-icon-container">
+          <img
+            class="youtube-menu-icon"
+            src="Images for YT/Menu Logos for YT/9 Boxes Menu.svg"
+          />
+          <div class="tooltip">YouTube apps</div>
+        </div>
+        <div class="notification-icon-container">
+          <img
+            class="notification-icon"
+            src="Images for YT/Menu Logos for YT/Bell Icon.svg"
+          />
+          <div class="notifications-count">3</div>
+          <div class="tooltip">Notifications</div>
+        </div>
+        <img
+          class="account-icon"
+          src="Images for YT/Youtuber Logos for YT/SuperSimpleDev Account Logo.jpeg"
+        />
+      </div>
+    </header>
+
+    <!-- You can have multiple elements with same class, in CSS, this would mean all of them are affected -->
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img src="Images for YT/Menu Logos for YT/Home-menu.svg" alt="" />
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="Images for YT/Menu Logos for YT/Explore-menu.svg" alt="" />
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img
+          src="Images for YT/Menu Logos for YT/Supscriptions-menu.svg"
+          alt=""
+        />
+        <div>Supscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="Images for YT/Menu Logos for YT/Originals-menu.svg" alt="" />
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img
+          src="Images for YT/Menu Logos for YT/Youtube-music-menu.svg"
+          alt=""
+        />
+        <div>YouTube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="Images for YT/Menu Logos for YT/Library-menu.svg" alt="" />
+        <div>Library</div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="video-grid">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <!-- Having a link element encompassing an image, allows you to turn that image into a link
+            therefore, when the image is clicked, it'll lead to the link opening -->
+            <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+              <img
+                class="thumbnail"
+                src="Images for YT/Thumbnails for YT/MKBHD thumbnail.webp"
+              />
+            </a>
+            <div class="video-time">14:20</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-logo">
+              <a href="https://www.youtube.com/c/mkbhd">
+                <img
+                  class="profile-picture"
+                  src="Images for YT/Youtuber Logos for YT/MKBHD.jpeg"
+                />
+              </a>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <!-- Turning the video title into a link thats clickable -->
+                <a
+                  class="video-link"
+                  href="https://www.youtube.com/watch?v=n2RNcPRtAiY"
+                >
+                  Talking Tech and AI with Google CEO Sundar Pichai!
+                </a>
+              </p>
+              <p class="video-author">Marques Brownlee</p>
+              <p class="video-stats">3.4M views &#183; 6 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=mP0RAo9SKZk">
+              <img
+                class="thumbnail"
+                src="Images for YT/Thumbnails for YT/Markiplier thumbnail.webp"
+              />
+            </a>
+            <div class="video-time">8:22</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-logo">
+              <a href="https://www.youtube.com/c/markiplier">
+                <img
+                  class="profile-picture"
+                  src="Images for YT/Youtuber Logos for YT/Markiplier.jpeg"
+                />
+              </a>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a
+                  class="video-link"
+                  href="https://www.youtube.com/watch?v=mP0RAo9SKZk"
+                >
+                  Try Not to Laugh Challenge #9
+                </a>
+              </p>
+              <p class="video-author">Markiplier</p>
+              <p class="video-stats">19M views &#183; 4 years ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=FgjPQQeTh1w">
+              <img
+                class="thumbnail"
+                src="Images for YT/Thumbnails for YT/Sniper thumbnail.webp"
+              />
+            </a>
+            <div class="video-time">9:13</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-logo">
+              <a href="https://www.youtube.com/user/SSSniperWolf">
+                <img
+                  class="profile-picture"
+                  src="Images for YT/Youtuber Logos for YT/SSSniperWolf.jpeg"
+                />
+              </a>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a
+                  class="video-link"
+                  href="https://www.youtube.com/watch?v=FgjPQQeTh1w"
+                >
+                  Crazy Tik Toks Taken Moments Before DISASTER
+                </a>
+              </p>
+              <p class="video-author">SSSniperWolf</p>
+              <p class="video-stats">12M views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=094y1Z2wpJg">
+              <img
+                class="thumbnail"
+                src="Images for YT/Thumbnails for YT/Veritasium thumbnail.webp"
+              />
+            </a>
+            <div class="video-time">22:09</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-logo">
+              <a href="https://www.youtube.com/c/veritasium">
+                <img
+                  class="profile-picture"
+                  src="Images for YT/Youtuber Logos for YT/Veritasium.jpeg"
+                />
+              </a>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a
+                  class="video-link"
+                  href="https://www.youtube.com/watch?v=094y1Z2wpJg"
+                >
+                  The Simplest Math Problem No One Can Solve - Collatz
+                  Conjecture
+                </a>
+              </p>
+              <p class="video-author">Veritasium</p>
+              <p class="video-stats">18M views &#183; 4 months ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=86CQq3pKSUw">
+              <img
+                class="thumbnail"
+                src="Images for YT/Thumbnails for YT/Dojo thumbnail.webp"
+              />
+            </a>
+            <div class="video-time">11:17</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-logo">
+              <a href="https://www.youtube.com/c/CSDojo">
+                <img
+                  class="profile-picture"
+                  src="Images for YT/Youtuber Logos for YT/CS Dojo.jpeg"
+                />
+              </a>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a
+                  class="video-link"
+                  href="https://www.youtube.com/watch?v=86CQq3pKSUw"
+                >
+                  Kadane's Algorithm to Maximum Sum Subarray Problem
+                </a>
+              </p>
+              <p class="video-author">CS Dojo</p>
+              <p class="video-stats">519k views &#183; 5 years ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=yXWw0_UfSFg">
+              <img
+                class="thumbnail"
+                src="Images for YT/Thumbnails for YT/MrBeast thumbnail.webp"
+              />
+            </a>
+            <div class="video-time">19:59</div>
+          </div>
+          <div class="video-info-grid">
+            <div class="channel-logo">
+              <a
+                href="https://www.youtube.com/channel/UCX6OQ3DkcsbYNE6H8uQQuVA"
+              >
+                <img
+                  class="profile-picture"
+                  src="Images for YT/Youtuber Logos for YT/Mr Beast.jpeg"
+                />
+              </a>
+            </div>
+            <div class="video-info">
+              <p class="video-title">
+                <a
+                  class="video-link"
+                  href="https://www.youtube.com/watch?v=yXWw0_UfSFg"
+                >
+                  Anything You Can Fit In The Circle I’ll Pay For
+                </a>
+              </p>
+              <p class="video-author">MrBeast</p>
+              <p class="video-stats">141M views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
